@@ -1,0 +1,552 @@
+*{
+    background-attachment: white;
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box;
+    text-decoration:none ;
+}
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 2px;
+    
+    
+}
+header{ 
+    margin: 8px 55px;
+}
+nav{
+    
+    height: 90px;
+    margin: 20px 15px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+
+
+}
+nav ul li{
+    text-transform: uppercase;
+    margin: 0px 15px;
+    list-style: none;
+font-size: 20px  ;
+    
+}
+ nav ul li a{
+   text-transform: uppercase;
+   
+ }
+ nav .label{
+    font-size: 30px;
+    margin: 10px 0px ;
+    padding: 0px 10px; 
+    cursor: pointer;
+    font-weight: 600;
+ }
+ #btn{
+    background-color:rgb(236, 14, 14);
+    size: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    float: right;
+    padding:  9px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+ }
+ a.active,a.hover{
+    background-color:rgb(244, 14, 14);
+    transition-delay:.5s;
+    border-radius: 4px; 
+    color: white
+    
+ }
+ 
+main{
+border-radius: 10px;
+    background-image:url(Images/1.png);
+    margin:8px 60px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+ 
+ .banner{
+    display: flex;
+    justify-content:space-between;
+    
+ }
+ .parent p {
+    font-size: 13px;
+    
+
+ }
+ .parent{
+    margin:160px 0px;
+    background-color:rgb(65, 56, 56) ;
+    color: rgb(240, 248, 255);
+    height: 130px;
+    width:300px ;
+    border-radius: 9px;
+ }
+ .parent h3{
+font-weight: 650;
+ }
+ .icon{
+    color:white;
+    text-decoration: black;
+    margin: 250px 0px;
+    font-size: 40px;
+    background-color: black;
+    border-radius: 7px;
+    width: 60px;
+    
+ }
+ .club{
+    
+    border-style: dotted  ;
+    margin: 50px 55px;
+    border-radius: 11px;
+    height: 150px;
+    justify-content: center;
+    border-color: rgb(206, 210, 214);
+    
+ }
+
+ @keyframes html-progress {
+    to { --progress-value: 87; }
+
+  }
+  @keyframes css-progress {
+    to { --progress-value: 95; }
+  }
+  @keyframes html3-progress {
+    to { --progress-value: 92; }
+  }
+  @keyframes html4-progress {
+    to { --progress-value: 90; }
+  }
+  .progress-all{
+    display: flex;
+    justify-content: center;
+    margin: 0px 60px;
+    border-style:  dotted;
+    border-color: rgb(213, 209, 209);
+    border-radius: 10px;
+    height: 250px;
+    
+  }
+  .progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+    /* to center the percentage value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  }
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+  }
+  .html {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hotpink calc(var(--progress-value) * 1%), rgb(240, 229, 231) 0);
+    animation: html-progress 2s 1 forwards;
+  }
+  .html {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hotpink calc(var(--progress-value) * 1%), rgb(231, 226, 227) 0);
+    animation: html-progress 2s 1 forwards;
+  }
+  .css{
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(215, 38, 126) calc(var(--progress-value) * 1%), rgb(235, 233, 233) 0);
+    animation: html-progress 2s 1 forwards;
+  }
+  .css {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(43, 228, 22) calc(var(--progress-value) * 1%), rgb(238, 233, 234) 0);
+    animation: html-progress 2s 1 forwards;
+  }
+  .html3{
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(202, 175, 24) calc(var(--progress-value) * 1%), pink 0);
+    animation: html-progress 2s 1 forwards;
+  }
+  .html3 {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hwb(359 5% 22% / 0.694) calc(var(--progress-value) * 1%), rgb(233, 230, 230) 0);
+    animation: html-progress 2s 1 forwards;
+  }
+  .html4 {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(201, 45, 21) calc(var(--progress-value) * 1%), pink 0);
+    animation: html-progress 2s 1 forwards;
+  }
+  .html4 {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(23, 25, 175) calc(var(--progress-value) * 1%), rgb(242, 235, 235) 0);
+    animation: html-progress 2s 1 forwards;
+  }
+  progress  {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  ;
+  }
+  .programs{
+      
+    border-style: dotted  ;
+    margin: 50px 55px;
+    border-radius: 11px;
+    height: 150px;
+    justify-content: center;
+    border-color: rgb(206, 210, 214);
+  }
+  .program{
+    display: flex;
+    height: 170px;
+    margin: 55px;
+    justify-content: space-around;
+    bac
+  }
+  .junior p{
+    font-size: 9px;
+
+  }
+  .junior h2{
+    color:whit;
+  }
+  .trainer p{
+    font-size: 9px;
+
+  }
+  .trainer h2{
+    color:whit;
+  }
+  .profession p{
+    font-size: 9px;
+
+  }
+  .profession h2{
+    color:whit;
+  }
+#btm{
+    background-color:rgb(254, 60, 38) ;
+    height: 35px;
+    width: 120px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+}
+.junior{
+background-image: url(Images/2.png);
+height: 300px;
+width:650px ;
+border-radius: 12px;
+color: white;
+justify-content: center;
+padding-left: 20px;
+}
+.trainer{
+background-image: url(Images/3.png) ; 
+height: 300px;
+width:650px ;
+border-radius: 12px;
+color: white;
+justify-content: center;
+padding-left: 20px;
+
+}
+.hockey{
+background-image: url(Images/4.png);
+margin: 60px;
+border-radius: 15px;
+padding: 20px;
+height: 450px;
+color: white;
+justify-content: center;
+}
+.new{
+  margin: 55px;
+  border-radius: 12px;
+  border-style: dotted;
+  border-color: rgb(230, 230, 237);
+  height: 150px;
+  font-weight: 200;
+}
+.new p{
+font-size: small;
+}
+.products{
+  display: flex;
+  justify-content: center;
+  margin:15px 0px ;
+  gap: 8px;
+}
+.flags{
+  display: flex;
+  border-style: dotted;
+  border-color: rgb(232, 226, 226);
+  height: 200px;
+  width: 550px;
+  border-radius: 15px;
+  padding-top: 9px;
+  padding-left: 9px;
+}
+
+
+.flags0{
+  display: flex; border-style: dotted;
+  border-color: rgb(232, 226, 226);
+  height: 200px;
+  width: 550px;
+  border-radius: 15px;
+  padding-top: 9px;
+  padding-left: 9px;
+
+}
+.products1{
+  display: flex;
+  justify-content: center;
+  margin:15px 0px;
+  gap: 8px;
+}
+.flags1{
+  display: flex; border-style: dotted;
+  border-color: rgb(232, 226, 226);
+  height: 200px;
+  width: 550px;
+  border-radius: 15px;
+  padding-top: 9px;
+  padding-left: 9px;
+
+}
+.flags2{
+  display: flex; border-style: dotted;
+  border-color: rgb(232, 226, 226);
+  height: 200px;
+  width: 550px;
+  border-radius: 15px;
+  padding-top: 9px;
+  padding-left: 9px;
+
+}
+
+.products2{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+  gap: 8px;
+ 
+}
+.flags3{
+  display: flex; border-style: dotted;
+  border-color: rgb(232, 226, 226);
+  height: 200px;
+  width: 550px;
+  border-radius: 15px;
+  padding-top: 9px;
+  padding-left: 9px;
+
+}
+
+.flags4{
+  display: flex; border-style: dotted;
+  border-color: rgb(232, 226, 226);
+  height: 200px;
+  width: 550px;
+  border-radius: 15px;
+  padding-top: 9px;
+  padding-left: 9px;
+
+}
+.price p{
+  color: coral;
+  font-weight: 800;
+}
+.price{
+  display: flex;
+  gap: 10px;
+}
+.text p{
+  font-size: small;
+}
+ .text h2{
+  color: rgb(24, 23, 23);
+ }
+ .clints{
+  margin: 55px;
+  border-radius: 12px;
+  border-style: dotted;
+  border-color: rgb(230, 230, 237);
+  height: 150px;
+  justify-content: center;
+ }
+ .container2{
+  margin-top: 75px;
+  display:flex ;
+  gap: 30px;
+  border-radius: 15px;
+  border-style: dotted;
+  border-color: rgb(239, 234, 234);
+  height: px;
+ }
+ .new1 li{
+  height: 45px;
+font-weight: 800;
+ }
+ .touch{
+  margin: 55px;
+  border-radius: 12px;
+  border-style: dotted;
+  border-color: rgb(230, 230, 237);
+  height: 150px;
+  font-weight: 200;
+  padding: 10px;
+ }
+ .suffort1{
+  
+  
+ }
+ .call{
+  background-color: rgb(212, 228, 188);
+  height: 180px;
+  border-radius: 10px;
+  justify-content: center;
+  padding-left: 45px;
+  padding-top:25px ;
+  width: 450px;
+ }.message{
+  background-color:rgb(225, 218, 186);
+  height: 180px;
+  border-radius: 10px;
+  justify-content: center;
+  padding-left: 45px;
+  padding-top:25px ;
+  width: 450px;
+ }
+ .location{
+  background-color: rgb(135, 130, 157);
+  height: 180px;
+  border-radius: 10px;
+  justify-content: center;
+  padding-left: 45px;
+  padding-top:25px ;
+  width: 450px;
+ }
+ .suffort{
+display: flex;
+gap: 30px;
+justify-content: center;
+margin-right:30px ;
+
+
+ }
+ .suffort1{
+  border-style: dotted;
+  border-color:rgb(234, 230, 230) ;
+  height: 580px;
+  width: px;
+ }
+ .input0 {
+  display: flex;
+  gap: 50px;
+
+  }
+  .input2{
+    display: flex;
+    gap:50px;
+    }
+    input{
+      width: 250px;
+      height:40px ;
+      border-radius: 8px;
+      background-color: rgba(247, 244, 244, 0.853);
+    }
+    .mesg input{
+      width: 570px;
+      height: 250px;
+      padding-left: 10px;
+      padding-bottom: 180px;
+    }
+    #btn9{
+      color: white;
+      background-color: rgb(228, 11, 11);
+      width: 570px;
+      height: 40px;
+      border-radius: 8px;
+    }
+    .media{
+      margin: 55px;
+  border-radius: 12px;
+  border-style: dotted;
+  border-color: rgb(230, 230, 237);
+  height: 150px;
+  font-weight: 200;
+  padding-top: 5px;
+  gap: 50px;
+}
+  .i{
+    gap: 89px;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 14, 17);
+    margin: 0px 0px;
+    color: rgb(233, 230, 230);
+    height: 280px;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer1{
+    gap: px;
+  }
+  .footer1 h2{
+font-size: 30px;
+  }
+  .footer1 li{
+font-size: 15px;
+list-style: none;
+gap: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
